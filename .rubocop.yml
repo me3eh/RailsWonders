@@ -1,0 +1,23 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: #TODO: enter ruby version
+  NewCops: enable
+  Exclude:
+    - 'db/**/*'
+    - 'vendor/**/*'
+    - "tmp/**/*"
+    - "bin/**/*"
+    - "log/**/*"
+    - "public/**/*"
+    - "vendor/**/*"
+Layout/LineLength:
+  Max: 120
+Style/Documentation:
+  Enabled: false
+Metrics/BlockLength:
+  Exclude:
+    - 'config/**/*'
