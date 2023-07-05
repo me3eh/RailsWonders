@@ -1,0 +1,26 @@
+<style>
+  .some-div {
+    width: 500px;
+    height: 500px;
+    background-image: url("/assets/background_dissapear.png");
+    background-position: center;
+  }
+</style>
+<div id="some-id-for-replace">
+  <div class="flex flex-col">
+    <div class="relative some-div">
+      <img id="some-id-for-remove" class="relative" src="<%= asset_url("dissapear") %> " width="300" height="300" style="top: 41%; left: 6%"/>
+    </div>
+    <div class="flex">
+      <%= form_with scope: :q, url: disappear_turbo_showcase_removing_methods_path, data: { turbo: true, turbo_method: :post },
+                    class: "space-y-8 divide-y divide-gray-200" do |f| %>
+        <%= f.submit "Dissapear", { class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" } %>
+      <% end %>
+
+      <%= form_with scope: :q, url: appear_turbo_showcase_removing_methods_path, data: { turbo: true, turbo_method: :post },
+                    class: "space-y-8 divide-y divide-gray-200" do |f| %>
+        <%= f.submit "Appear", { class: "bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" } %>
+      <% end %>
+    </div>
+  </div>
+</div>

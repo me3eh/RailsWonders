@@ -26,5 +26,17 @@ Rails.application.routes.draw do
         post :sober
       end
     end
+    resources :prepending_methods do
+      collection do
+        post :another_one
+        post :sober
+      end
+    end
+    resources :removing_methods do
+      collection do
+        post :disappear
+        post :appear
+      end
+    end
   end
 end

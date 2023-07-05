@@ -1,6 +1,4 @@
 <div id="some-id-for-replace">
-  <img src="https://fwcdn.pl/ppo/88/34/1718834/454101.2.jpg" width="300" height="300" />
-  <p>Give me shot</p>
 
   <div class="flex column">
     <%= form_with scope: :q, url: another_one_turbo_showcase_appending_methods_path, data: { turbo: true, turbo_method: :post },
@@ -13,6 +11,9 @@
       <%= f.submit "Lets sober up", { class: "bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" } %>
     <% end %>
   </div>
+
   <div id="some-id-for-append" class="flex w-[1000px] flex-wrap pb-[500px]">
+    <img src="https://fwcdn.pl/ppo/88/34/1718834/454101.2.jpg" width="100" height="100" />
+    <p>Give me shot</p>
   </div>
 </div>
