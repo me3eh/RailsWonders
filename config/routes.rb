@@ -14,5 +14,17 @@ Rails.application.routes.draw do
         post :sad_mood
       end
     end
+    resources :replacing_methods do
+      collection do
+        post :happy_mood
+        post :sad_mood
+      end
+    end
+    resources :appending_methods do
+      collection do
+        post :another_one
+        post :sober
+      end
+    end
   end
 end
