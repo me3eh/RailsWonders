@@ -13,12 +13,12 @@ module TurboShowcase
 
     def sad_mood
       render turbo_stream: turbo_stream.update("some-id-for-update",
-                                               partial: "turbo_showcase/updating_methods/components_for_update/happy_mood")
+                                               partial: "turbo_showcase/updating_methods/components/happy_mood")
     end
 
     def happy_mood
       render turbo_stream: turbo_stream.update("some-id-for-update",
-                                               partial: "turbo_showcase/updating_methods/components_for_update/sad_mood")
+                                               partial: "turbo_showcase/updating_methods/components/sad_mood")
     end
   end
 end

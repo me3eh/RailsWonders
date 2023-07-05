@@ -1,7 +1,11 @@
-<div class="flex column">
-  <%= form_with scope: :q, url: happy_mood_turbo_showcase_updating_methods_path, data: { turbo: true, turbo_method: :post }, class: "space-y-8 divide-y divide-gray-200" do |f| %>
-    <img style=" width: 300px; height: 300px" src="https://i.ytimg.com/vi/XpXRIM24Vzk/hqdefault.jpg"/>
-      <p>Have a great day </p>
-      <%= f.submit "Change moods", { class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" } %>
-  <% end %>
+<div id="some-id-for-replace">
+
+  <div class="flex column">
+    <%= form_with scope: :q, url: happy_mood_turbo_showcase_replacing_methods_path, data: { turbo: true, turbo_method: :post },
+                  class: "space-y-8 divide-y divide-gray-200" do |f| %>
+      <img style=" width: 300px; height: 300px" src="https://i.ytimg.com/vi/XpXRIM24Vzk/hqdefault.jpg"/>
+        <p>Have a great day </p>
+        <%= f.submit "Change moods", { class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" } %>
+    <% end %>
+  </div>
 </div>
