@@ -1,0 +1,12 @@
+<div class="flex flex-col">
+  <h1 class="font-bold text-[70px]">Update with Turbo</h1>
+  <%= render NameOfFileComponent.new(name_of_file: "index.html.erb", file_content: @main_file_html, file_type: "application-html") %>
+
+  <%= render NameOfFileComponent.new(name_of_file: "happy_mood.html.erb", file_content: @happy_mood_file_html, file_type: "application-html") %>
+
+  <%= render NameOfFileComponent.new(name_of_file: "sad_mood.html.erb", file_content: @sad_mood_file_html, file_type: "application-html") %>
+
+  <%= render NameOfFileComponent.new(name_of_file: "turbo_showcases_controller.html.erb", file_content: @controller_file_ruby, file_type: "ruby") %>
+
+  <%= render template: 'turbo_showcase/updating_methods/components/div_with_id' %>
+</div>
