@@ -1,0 +1,89 @@
+<div class="contenidor">
+  <span class="heh-span">Witaj<br>młodzieńcze</span>
+  <div class="imatge">
+    <img src="https://cdn.discordapp.com/attachments/905167631554842714/1126109411585298584/siemanko-removebg-preview.png">
+  </div>
+</div>
+<iframe width="200" height="150" src="https://www.youtube-nocookie.com/embed/oKD-MVfC9Ag?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+    }
+    body {
+        font-family: Impact, sans-serif;
+        font-size: 120px;
+        font-size: 750%;
+        text-align: center;
+    }
+    @keyframes desplaçament {
+        from {
+            text-shadow: 0 0 #ff4ba8;
+        }
+        to {
+            text-shadow: 0.15em 0.15em #ff4ba8;
+        }
+    }
+    @keyframes color {
+        from {
+            color: #00e5f8;
+        }
+        to {
+            color: #0caca6;
+        }
+    }
+    @keyframes rotacio {
+        from {
+            transform: rotate(-4deg);
+        }
+        to {
+            transform: rotate(4deg);
+        }
+    }
+    .contenidor {
+        display: flex;
+        margin-top: 20vh;
+        width: 100%;
+        background-color: #333;
+        border-top: 5px solid white;
+        border-bottom: 5px solid white;
+    }
+    .heh-span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5% 2%;
+        width: 65%;
+        font-size: 1em;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1em;
+        animation-name: desplaçament, color, rotacio;
+        animation-duration: 2s, 1s, 3s;
+        animation-timing-function: ease-in, ease-out, ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .imatge {
+        width: 35%;
+        background: linear-gradient(#ff4ba8, #6d0b13);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+    }
+    img {
+        margin: 10% 10% 10% 30%;
+        width: 60%;
+        animation-name: rotacio;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    iframe {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+</style>

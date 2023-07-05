@@ -1,0 +1,12 @@
+<div class="flex flex-col">
+  <h1 class="font-bold text-[70px]">Prepend with Turbo</h1>
+  <%= render NameOfFileComponent.new(name_of_file: "index.html.erb", file_content: @index_html, file_type: "application-html") %>
+
+  <%= render NameOfFileComponent.new(name_of_file: "div_with_id.html.erb", file_content: @div_with_id_html, file_type: "application-html") %>
+
+  <%= render NameOfFileComponent.new(name_of_file: "_another_one.html.erb", file_content: @another_one_html, file_type: "application-html") %>
+
+  <%= render NameOfFileComponent.new(name_of_file: "prepending_methods_controller.rb", file_content: @controller_file_ruby, file_type: "ruby") %>
+
+  <%= render template: 'turbo_showcase/prepending_methods/components/div_with_id' %>
+</div>
